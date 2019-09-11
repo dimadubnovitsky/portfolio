@@ -1,0 +1,55 @@
+.project {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 60px;
+    height: max-content;
+    position: relative;
+}
+
+.projectImg {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./../../../assets/img/todolist.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projectImg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background-color: #000000;
+    opacity: 0.4;
+}
+
+.btnShow {
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: relative;
+}
+
+.projectTitle {
+    margin: 20px 15px 10px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.description {
+    margin: 0 15px 20px;
+}

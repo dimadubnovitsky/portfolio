@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.line {
+    height: 1px;
+    width: 55px;
+    margin: 30px 0;
+    background-color: #ea548d;
+}
