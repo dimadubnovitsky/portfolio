@@ -2,29 +2,64 @@ import React from 'react';
 import styles from './Skills.module.css';
 import BlockTitle from "../BlockTitle/BlockTitle";
 import Skill from "./Skill/Skill";
-import Fade from 'react-reveal/Fade';
 import htmlIcon from "./../../assets/img/html-icon.svg";
 import jsIcon from "./../../assets/img/js-icon.svg";
 import reactIcon from "./../../assets/img/react-icon.svg";
 
-const Skills = () => {
-    return (
-        <div id={"skills"} className={styles.skills}>
-            <Fade bottom>
+class Skills extends React.Component {
+
+    state = {
+        skills: [
+            {
+                title: "HTML&CSS",
+                icon: htmlIcon,
+                description: "Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."
+            },
+            {
+                title: "JavaScript",
+                icon: jsIcon,
+                description: "Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."
+            },
+            {
+                title: "React",
+                icon: reactIcon,
+                description: "Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."
+            }
+        ]
+    }
+
+    render() {
+        return (
+            <div id={"skills"} className={styles.skills}>
                 <div className={styles.container}>
-                    <BlockTitle title={"Мои скиллы"}/>
+                    <BlockTitle title={"My skills"}/>
                     <div className={styles.skillsWrapper}>
-                        <Skill title={"HTML&CSS"} icon={htmlIcon}
-                               description={"Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."}/>
-                        <Skill title={"JavaScript"} icon={jsIcon}
-                               description={"Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."}/>
-                        <Skill title={"React"} icon={reactIcon}
-                               description={"Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."}/>
+                        {this.state.skills.map(s =>
+                            <Skill title={s.title} icon={s.icon} description={s.description}/>
+                        )}
                     </div>
                 </div>
-            </Fade>
-        </div>
-    );
+            </div>
+        )
+    }
 }
+
+// const Skills = () => {
+//     return (
+//         <div id={"skills"} className={styles.skills}>
+//             <div className={styles.container}>
+//                 <BlockTitle title={"My skills"}/>
+//                 <div className={styles.skillsWrapper}>
+//                     <Skill title={"HTML&CSS"} icon={htmlIcon}
+//                            description={"Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."}/>
+//                     <Skill title={"JavaScript"} icon={jsIcon}
+//                            description={"Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."}/>
+//                     <Skill title={"React"} icon={reactIcon}
+//                            description={"Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."}/>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
 
 export default Skills;

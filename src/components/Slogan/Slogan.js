@@ -6,12 +6,12 @@ import Fade from 'react-reveal/Fade';
 const Slogan = () => {
     return (
         <div className={styles.slogan}>
-            <Fade bottom>
-                <div className={styles.container}>
-                    <BlockTitle title={"Рассматриваю варианты удаленной работы"}/>
-                    <a className={styles.btnSubmit} href="">Нанять меня</a>
-                </div>
-            </Fade>
+            <div className={styles.container}>
+                <BlockTitle title={"I Am Available For Freelancer"}/>
+                <Fade bottom>
+                    <a className={styles.btnSubmit} href="#">Hire me</a>
+                </Fade>
+            </div>
         </div>
     );
 }
