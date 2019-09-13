@@ -3,6 +3,7 @@
     justify-content: center;
     height: max-content;
     background-color: #252527;
+    position: relative;
 }
 
 .container {
@@ -14,9 +15,8 @@
 }
 
 .btnSubmit {
+    max-width: 180px;
     color: #ffffff;
-    width: 150px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,12 +25,28 @@
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
     margin: 0 0 15px;
-    padding: 0;
+    padding: 8px 30px;
     font-size: 14px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 1;
     background-color: transparent;
     outline: none;
     text-decoration: none;
+    position: relative;
+}
+
+.btnSubmit:after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    background-color: #ea548d;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnSubmit:hover:after {
+    width: 100%;
+    height: 100%;
 }

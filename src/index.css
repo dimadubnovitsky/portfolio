@@ -8,6 +8,7 @@ body {
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 0.8px;
+    background-color: #1f1f20;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

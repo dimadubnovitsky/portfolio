@@ -4,7 +4,7 @@ import styles from './Project.module.css';
 const Project = (props) => {
     return (
         <div className={styles.project}>
-            <div className={styles.projectImg}>
+            <div className={styles.projectImg} style={{backgroundImage: `url(${props.backgroundImage})`}}>
                 <a className={styles.btnShow} href="">Смотреть</a>
             </div>
             <span className={styles.projectTitle}>{props.title}</span>
@@ -12,5 +12,4 @@ const Project = (props) => {
         </div>
     );
 }
-
 export default Project;
