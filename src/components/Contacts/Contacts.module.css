@@ -17,8 +17,12 @@
 .formWrapper {
     display: flex;
     flex-direction: column;
-    width: 550px;
-    margin-top: -40px;
+    width: 600px;
+    margin-top: -10px;
+}
+
+.formArea::-webkit-input-placeholder {
+    color: #9b9b9b;
 }
 
 .formArea,
@@ -29,15 +33,36 @@
     outline: none;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: #9b9b9b;
     margin-bottom: 1.2rem;
     box-sizing: border-box;
     transition: all 0.4s ease-in-out 0s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .formArea:focus,
 .messageArea:focus {
     border-color: transparent;
+}
+
+.formArea:focus::-webkit-input-placeholder, .messageArea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.formArea:focus::-moz-placeholder, .messageArea:focus::-moz-placeholder {
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.formArea:focus:-moz-placeholder, .messageArea:focus:-moz-placeholder {
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.formArea:focus:-ms-input-placeholder, .messageArea:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
 }
 
 .formArea {
@@ -54,30 +79,34 @@
     max-width: 180px;
     color: #ffffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     align-self: center;
     border: none;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: Poppins, sans-serif;
     text-transform: uppercase;
     margin-top: 20px;
-    padding: 8px 30px;
+    padding: 8px 60px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.2;
+    letter-spacing: 1px;
     background-color: transparent;
     outline: none;
     text-decoration: none;
     position: relative;
+    cursor: pointer;
 }
 
 .btnSubmit:after {
     content: "";
     position: absolute;
-    width: 60%;
+    width: 30%;
     height: 10px;
     background-color: #ea548d;
     bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
     z-index: -1;
     transition: all 0.2s ease-in-out;
 }
@@ -85,9 +114,6 @@
 .btnSubmit:hover:after {
     width: 100%;
     height: 100%;
-}
-.btnSubmit:hover {
-    cursor: pointer;
 }
 
 @media screen and (max-width: 688px) {

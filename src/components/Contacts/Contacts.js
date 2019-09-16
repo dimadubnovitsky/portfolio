@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Contacts.module.css';
 import BlockTitle from "../BlockTitle/BlockTitle";
 import Fade from 'react-reveal/Fade';
+import {Slide} from "react-reveal";
 
 const Contacts = () => {
     return (
@@ -9,15 +10,11 @@ const Contacts = () => {
             <div className={styles.container}>
                 <BlockTitle title={"Contacts"}/>
                 <form className={styles.formWrapper}>
-                    <Fade bottom>
+                    <Slide bottom>
                         <input className={styles.formArea} placeholder="Name" type="text"/>
-                    </Fade>
-                    <Fade bottom>
                         <input className={styles.formArea} placeholder="E-mail" type="email"/>
-                    </Fade>
-                    <Fade bottom>
-                        <textarea className={styles.messageArea} placeholder="Message"></textarea>
-                    </Fade>
+                        <textarea className={styles.messageArea} placeholder="Message"/>
+                    </Slide>
                     <Fade bottom>
                         <button className={styles.btnSubmit} type="submit">Send</button>
                     </Fade>

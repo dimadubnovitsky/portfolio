@@ -9,7 +9,7 @@ const Slogan = () => {
             <div className={styles.container}>
                 <BlockTitle title={"I Am Available For Freelancer"}/>
                 <Fade bottom>
-                    <a className={styles.btnSubmit} href="#">Hire me</a>
+                    <a className={styles.btnSubmit} href="">Hire me</a>
                 </Fade>
             </div>
         </div>
