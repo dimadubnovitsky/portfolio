@@ -31,7 +31,7 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className={styles.socialIcon}>
-                            <a href="https://www.linkedin.com/in/dima-dubnovitsky-1018a9190" target="_blank"
+                            <a href="https://www.linkedin.com/in/dimadubnovitsky" target="_blank"
                                rel="noopener noreferrer">
                                 <img src={linkedinIcon} alt="linkedin"/>
                             </a>
