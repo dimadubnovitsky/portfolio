@@ -12,8 +12,8 @@ const Footer = () => {
         <div className={styles.footer}>
             <div className={styles.container}>
                 <BlockTitle title={"Dima Dubnovitsky"}/>
-                <div className={styles.socialBlock}>
-                    <Fade bottom>
+                <Fade bottom>
+                    <div className={styles.socialBlock}>
                         <div className={styles.socialIcon}>
                             <a href="https://vk.com/dimad13" target="_blank" rel="noopener noreferrer">
                                 <img src={vkIcon} alt="vk"/>
@@ -36,8 +36,8 @@ const Footer = () => {
                                 <img src={linkedinIcon} alt="linkedin"/>
                             </a>
                         </div>
-                    </Fade>
-                </div>
+                    </div>
+                </Fade>
                 <Fade bottom>
                     <span className={styles.copyright}>©2019 All rights reserved</span>
                 </Fade>
