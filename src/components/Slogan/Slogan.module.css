@@ -17,12 +17,6 @@
 .btnSubmit {
     max-width: 180px;
     color: #ffffff;
-
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*align-self: center;*/
-
     border: none;
     font-family: Poppins, sans-serif;
     text-transform: uppercase;

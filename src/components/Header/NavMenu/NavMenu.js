@@ -24,15 +24,4 @@ class NavMenu extends React.Component {
     }
 }
 
-// const NavMenu = () => {
-//     return (
-//         <div className={styles.navMenu}>
-//             <Link to="main" smooth>Main</Link>
-//             <Link to="skills" smooth>Skills</Link>
-//             <Link to="projects" smooth>Projects</Link>
-//             <Link to="contacts" smooth>Contacts</Link>
-//         </div>
-//     );
-// }
-
 export default NavMenu;

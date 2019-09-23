@@ -6,9 +6,9 @@ const Project = (props) => {
     return (
         <Fade bottom>
             <div className={styles.project}>
-                <div className={styles.projectImg} style={{backgroundImage: `url(${props.backgroundImage})`}}>
-                    {/*<a className={styles.btnShow} href="">Смотреть</a>*/}
-                </div>
+                <a href="">
+                    <div className={styles.projectImg} style={{backgroundImage: `url(${props.backgroundImage})`}}/>
+                </a>
                 <span className={styles.projectTitle}>{props.title}</span>
                 <span className={styles.description}>{props.description}</span>
             </div>

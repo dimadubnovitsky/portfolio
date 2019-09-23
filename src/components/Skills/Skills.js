@@ -44,22 +44,4 @@ class Skills extends React.Component {
     }
 }
 
-// const Skills = () => {
-//     return (
-//         <div id={"skills"} className={styles.skills}>
-//             <div className={styles.container}>
-//                 <BlockTitle title={"My skills"}/>
-//                 <div className={styles.skillsWrapper}>
-//                     <Skill title={"HTML&CSS"} icon={htmlIcon}
-//                            description={"Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."}/>
-//                     <Skill title={"JavaScript"} icon={jsIcon}
-//                            description={"Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."}/>
-//                     <Skill title={"React"} icon={reactIcon}
-//                            description={"Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."}/>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
 export default Skills;
