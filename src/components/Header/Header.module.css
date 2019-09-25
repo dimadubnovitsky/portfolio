@@ -13,4 +13,5 @@
     justify-content: flex-end;
     align-items: center;
     width: 80%;
+    max-width: 1600px;
 }

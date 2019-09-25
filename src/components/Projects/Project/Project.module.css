@@ -6,6 +6,9 @@
     margin-bottom: 60px;
     height: max-content;
     position: relative;
+}
+
+.project a {
     overflow: hidden;
 }
 

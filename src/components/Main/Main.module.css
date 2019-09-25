@@ -8,6 +8,7 @@
 .container {
     flex-wrap: wrap;
     width: 80%;
+    max-width: 1600px;
     display: flex;
     justify-content: space-around;
     align-items: center;
