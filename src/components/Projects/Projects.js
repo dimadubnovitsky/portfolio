@@ -12,16 +12,19 @@ class Projects extends React.Component {
             {
                 title: "Social network",
                 backgroundImage: socialNetwork,
+                link: "https://github.com/dimadubnovitsky?tab=repositories",
                 description: "Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."
             },
             {
                 title: "Todolist",
                 backgroundImage: todolist,
+                link: "https://github.com/dimadubnovitsky?tab=repositories",
                 description: "Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."
             },
             {
                 title: "Calculator",
                 backgroundImage: calculator,
+                link: "https://github.com/dimadubnovitsky?tab=repositories",
                 description: "Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."
             }
         ]
@@ -34,7 +37,7 @@ class Projects extends React.Component {
                     <BlockTitle title={"My projects"}/>
                     <div className={styles.projectsWrapper}>
                         {this.state.projects.map(p =>
-                            <Project title={p.title} backgroundImage={p.backgroundImage} description={p.description}/>
+                            <Project title={p.title} link={p.link} backgroundImage={p.backgroundImage} description={p.description}/>
                         )}
                     </div>
                 </div>
