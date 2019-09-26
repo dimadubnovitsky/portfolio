@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Project.module.css';
+import styles from './Project.module.scss';
 import Fade from 'react-reveal/Fade';
 
 const Project = (props) => {

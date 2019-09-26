@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Footer.module.css';
+import styles from './Footer.module.scss';
 import BlockTitle from "../BlockTitle/BlockTitle";
 import vkIcon from "./../../assets/img/vk.svg"
 import instagramIcon from "./../../assets/img/instagram.svg"

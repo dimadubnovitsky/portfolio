@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Projects.module.css';
+import styles from './Projects.module.scss';
 import BlockTitle from "../BlockTitle/BlockTitle";
 import Project from "./Project/Project";
 import todolist from "./../../assets/img/todolist.jpg";

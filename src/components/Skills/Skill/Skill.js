@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Skill.module.css';
+import styles from './Skill.module.scss';
 import Fade from 'react-reveal/Fade';
 
 const Skill = (props) => {

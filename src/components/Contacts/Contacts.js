@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Contacts.module.css';
+import styles from './Contacts.module.scss';
 import BlockTitle from "../BlockTitle/BlockTitle";
 import Fade from 'react-reveal/Fade';
 import {Slide} from "react-reveal";

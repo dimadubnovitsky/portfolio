@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Slogan.module.css';
+import styles from './Slogan.module.scss';
 import BlockTitle from "../BlockTitle/BlockTitle";
 import Fade from 'react-reveal/Fade';
 import {Link} from "react-scroll/modules";

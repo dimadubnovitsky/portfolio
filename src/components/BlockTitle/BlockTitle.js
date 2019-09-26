@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './BlockTitle.module.css';
+import styles from './BlockTitle.module.scss';
 import {Fade} from "react-reveal";
 
 const BlockTitle = (props) => {

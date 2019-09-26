@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Skills.module.css';
+import styles from './Skills.module.scss';
 import BlockTitle from "../BlockTitle/BlockTitle";
 import Skill from "./Skill/Skill";
 import htmlIcon from "./../../assets/img/html-icon.svg";
