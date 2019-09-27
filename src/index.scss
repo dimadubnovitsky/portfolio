@@ -1,0 +1,21 @@
+@import "styles/variables.scss";
+
+html,
+body {
+  margin: 0;
+  font-family: $mainFont;
+  color: #ffffff;
+  font-weight: 400;
+  font-stretch: normal;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+  background-color: #1f1f20;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
