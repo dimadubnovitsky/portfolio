@@ -8,8 +8,10 @@ const Project = (props) => {
             <div className={styles.project}>
                 <a href={props.link} target="_blank" rel="noopener noreferrer">
                     <div className={styles.projectLink}>
-                        <div className={styles.projectImg} style={{backgroundImage: `url(${props.backgroundImage})`}}/>
-                        <span>Look at GitHub</span>
+                        <div className={styles.projectImg}>
+                            <img src={props.backgroundImage} alt=""/>
+                        </div>
+                        <span>See the project</span>
                     </div>
                 </a>
                 <span className={styles.projectTitle}>{props.title}</span>

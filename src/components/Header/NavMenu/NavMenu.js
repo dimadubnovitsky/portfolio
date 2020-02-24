@@ -16,8 +16,8 @@ class NavMenu extends React.Component {
     render() {
         return (
             <div className={styles.navMenu}>
-                {this.state.links.map(l =>
-                    <Link to={l.path} smooth>{l.title}</Link>
+                {this.state.links.map(link =>
+                    <Link to={link.path} smooth>{link.title}</Link>
                 )}
             </div>
         )

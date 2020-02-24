@@ -2,31 +2,17 @@ import React from 'react';
 import styles from './Projects.module.scss';
 import BlockTitle from "../BlockTitle/BlockTitle";
 import Project from "./Project/Project";
-import todolist from "./../../assets/img/todolist.jpg";
-import calculator from "./../../assets/img/calculator.jpg";
-import socialNetwork from "./../../assets/img/social-network.jpg";
+import iridescentStudio from "./../../assets/img/iridescent.png";
 
 class Projects extends React.Component {
     state = {
         projects: [
             {
-                title: "Social network",
-                backgroundImage: socialNetwork,
-                link: "https://github.com/dimadubnovitsky?tab=repositories",
-                description: "Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."
+                title: "Iridescent Studio website (in progress now)",
+                backgroundImage: iridescentStudio,
+                link: "https://iridescent.studio",
+                description: "Website for Iridescent Studio. Website are built with React JS and Redux."
             },
-            {
-                title: "Todolist",
-                backgroundImage: todolist,
-                link: "https://github.com/dimadubnovitsky?tab=repositories",
-                description: "Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."
-            },
-            {
-                title: "Calculator",
-                backgroundImage: calculator,
-                link: "https://github.com/dimadubnovitsky?tab=repositories",
-                description: "Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM."
-            }
         ]
     }
 
@@ -36,8 +22,9 @@ class Projects extends React.Component {
                 <div className={styles.container}>
                     <BlockTitle title={"My projects"}/>
                     <div className={styles.projectsWrapper}>
-                        {this.state.projects.map(p =>
-                            <Project title={p.title} link={p.link} backgroundImage={p.backgroundImage} description={p.description}/>
+                        {this.state.projects.map(project =>
+                            <Project title={project.title} link={project.link} backgroundImage={project.backgroundImage}
+                                     description={project.description}/>
                         )}
                     </div>
                 </div>

@@ -32,7 +32,7 @@
   }
 
   &:hover .projectImg {
-    filter: blur(5px) brightness(0.6);
+    filter: blur(5px) brightness(0.8);
   }
 
   &:hover span {
@@ -41,10 +41,13 @@
 }
 
 .projectImg {
-  height: 300px;
-  background-size: cover;
-  background-position: center;
+  max-height: 300px;
   transition: all 0.2s ease-in-out 0s;
+
+  img {
+    width: 100%;
+    pointer-events: none;
+  }
 }
 
 .projectTitle {

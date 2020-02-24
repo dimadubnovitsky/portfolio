@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 import BlockTitle from "../BlockTitle/BlockTitle";
-import vkIcon from "./../../assets/img/vk.svg"
+// import vkIcon from "./../../assets/img/vk.svg"
 import instagramIcon from "./../../assets/img/instagram.svg"
 import telegramIcon from "./../../assets/img/telegram.svg"
 import linkedinIcon from "./../../assets/img/linkedin.svg"
+import whatsappIcon from "./../../assets/img/whatsapp.svg"
 import {Fade} from "react-reveal";
 
 const Footer = () => {
@@ -14,11 +15,11 @@ const Footer = () => {
                 <BlockTitle title={"Dima Dubnovitsky"}/>
                 <Fade bottom>
                     <div className={styles.socialBlock}>
-                        <div className={styles.socialIcon}>
-                            <a href="https://vk.com/dimad13" target="_blank" rel="noopener noreferrer">
-                                <img src={vkIcon} alt="vk"/>
-                            </a>
-                        </div>
+                        {/*<div className={styles.socialIcon}>*/}
+                        {/*    <a href="https://vk.com/dimad13" target="_blank" rel="noopener noreferrer">*/}
+                        {/*        <img src={vkIcon} alt="vk"/>*/}
+                        {/*    </a>*/}
+                        {/*</div>*/}
                         <div className={styles.socialIcon}>
                             <a href="https://www.instagram.com/dimadubnovitsky" target="_blank"
                                rel="noopener noreferrer">
@@ -31,6 +32,11 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className={styles.socialIcon}>
+                            <a href="https://wa.me/375445905492" target="_blank" rel="noopener noreferrer">
+                                <img src={whatsappIcon} alt="whatsapp"/>
+                            </a>
+                        </div>
+                        <div className={styles.socialIcon}>
                             <a href="https://www.linkedin.com/in/dimadubnovitsky" target="_blank"
                                rel="noopener noreferrer">
                                 <img src={linkedinIcon} alt="linkedin"/>
@@ -39,7 +45,7 @@ const Footer = () => {
                     </div>
                 </Fade>
                 <Fade bottom>
-                    <span className={styles.copyright}>©2019 All rights reserved</span>
+                    <span className={styles.copyright}>©2020 All rights reserved</span>
                 </Fade>
             </div>
         </div>

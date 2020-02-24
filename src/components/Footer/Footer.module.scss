@@ -12,7 +12,7 @@
   align-items: center;
   width: 80%;
   max-width: 1600px;
-  padding: 60px 0 10px;
+  padding: 60px 0 20px;
 }
 
 .socialBlock {
@@ -27,7 +27,7 @@
   height: 60px;
   border: 1px solid #4a4a4a;
   border-radius: 50%;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 
   a {
     width: 100%;
@@ -45,16 +45,20 @@
     border: 1px solid #ffffff;
   }
 
-  &:nth-child(1) img {
-    width: 65%;
-  }
+  //&:nth-child(1) img {
+  //  width: 65%;
+  //}
 
-  &:nth-child(3) img {
-    width: 40%;
+  &:nth-child(1) img {
+    width: 45%;
   }
 
   &:nth-child(2) img {
-    width: 45%;
+    width: 40%;
+  }
+
+  &:nth-child(3) img {
+    width: 50%;
   }
 }
 
